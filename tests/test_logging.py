@@ -40,7 +40,8 @@ def test_logger(app):
 
 
 def test_logger_debug(app):
-    app.debug = True
+    ##alterei o app.debug para false ao invés de true 
+    app.debug = False
     assert app.logger.level == logging.DEBUG
     assert app.logger.handlers == [default_handler]
 

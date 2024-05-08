@@ -224,7 +224,7 @@ def test_get_namespace():
     assert 2 == len(foo_options)
     assert "foo option 1" == foo_options["option_1"]
     assert "foo option 2" == foo_options["option_2"]
-    bar_options = app.config.get_namespace("BAR_", lowercase=False)
+    bar_options = app.config.get_namespace("BAR_", lowercase=False) 
     assert 2 == len(bar_options)
     assert "bar stuff 1" == bar_options["STUFF_1"]
     assert "bar stuff 2" == bar_options["STUFF_2"]
